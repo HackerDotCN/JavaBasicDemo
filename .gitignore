@@ -8,6 +8,7 @@ target/
 #忽略idea
 .idea/
 *.iml
+./../*iml
 out/
 #忽略info
 issue.info
