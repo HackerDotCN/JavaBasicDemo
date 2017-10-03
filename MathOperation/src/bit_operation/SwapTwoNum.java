@@ -1,6 +1,8 @@
 package bit_operation;
 
+//import org.junit.Test;
 import org.junit.Test;
+
 
 /**
  * Author: zhang
@@ -23,6 +25,6 @@ public class SwapTwoNum {
 
     @Test
     public void test(){
-
+        swapByXor(3,6);
     }
 }

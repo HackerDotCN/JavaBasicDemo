@@ -1,7 +1,4 @@
 
-//import org.junit.Test;
-
-import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +18,7 @@ public class ObjectApi {
         System.out.println(clazz2.toString());
     }
 
-    public static void hashCodeDemo(){
+    public static void hashCodeDemo() {
         String str = new String("abc");
         String str2 = str;
         String str3 = "abc";
@@ -31,12 +28,17 @@ public class ObjectApi {
         System.out.println(str3.hashCode());
         System.out.println(str4.hashCode());
         System.out.println(str.equals(str4));
-        System.out.println(str == str3?"str == str3":"str != str3");
+        System.out.println(str == str3 ? "str == str3" : "str != str3");
     }
 
     @Test
-    public void testDemo(){
-//        classDemo();
+    private void test(){
+
+    }
+
+    public static void main(String[] args) {
         hashCodeDemo();
     }
+
+
 }

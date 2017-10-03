@@ -10,7 +10,7 @@ import java.util.*;
 
 public class SortMapWithValue {
     public static void main(String[] args) {
-        Map<String,Integer> map = new TreeMap<>();
+        Map<String, Integer> map = new TreeMap<>();
         map.put("图书", 4);
         map.put("音像", 6);
         map.put("素材", 9);
@@ -26,13 +26,20 @@ public class SortMapWithValue {
         }
     }
 
-    private static ArrayList<Map.Entry<String, Integer>> sortMap(Map<String,Integer> map) {
+    private static ArrayList<Map.Entry<String, Integer>> sortMap(Map<String, Integer> map) {
         List<Map.Entry<String, Integer>> entries = new ArrayList<>(map.entrySet());
-        Collections.sort(entries, new Comparator<Map.Entry<String, Integer>>() {                         //编译器提示这里可以用Lambda表达式替代
+        Collections.sort(entries, new Comparator<Map.Entry<String, Integer>>() {                    //编译器提示这里可以用Lambda表达式替代
             public int compare(Map.Entry<String, Integer> obj1, Map.Entry<String, Integer> obj2) {
-                return obj2.getValue() - obj1.getValue();
+//                return obj2.getValue() - obj1.getValue();   //按照value从大到小排序
+//                return obj1.getValue() - obj2.getValue();   //按照value从小到大排序
+                return obj1.getValue().compareTo(obj2.getValue());
             }
         });
+//        Collections.sort(entries, ((Map.Entry < String, Integer > obj1, Map.Entry < String, Integer > obj2) -> {
+////            public int compare (){
+//                return obj1.getValue() - obj2.getValue();   //按照value从小到大排序
+////            }
+//        });
         return (ArrayList<Map.Entry<String, Integer>>) entries;
     }
 }

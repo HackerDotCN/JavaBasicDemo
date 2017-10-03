@@ -13,5 +13,9 @@ public class CommonOperation {
         System.out.println(Math.rint(3.4));
         System.out.println(Math.abs(-4));
         System.out.println(3 % 65);
+        System.out.println("--------------------分割线------------------------------");
+        for (int i = 0; i < 20; i++) {
+            System.out.println(i+":"+(3*Math.pow(i,3)-30*Math.pow(i,2)-70*i-24));
+        }
     }
 }
