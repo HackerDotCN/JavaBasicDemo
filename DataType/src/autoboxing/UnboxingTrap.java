@@ -17,12 +17,15 @@ public class UnboxingTrap {
         Long g = 3L;
         Integer h = new Integer(66);
         Integer i = new Integer(66);
+        Integer j = (127);
+        Integer k = (127);
+        System.out.println(j == k);
         System.out.println(c == d);  //-128~127之间的数有缓存不会新创建对象，所以为true
-        System.out.println(e == f);  //不缓存，新创建对象了，为false
-        System.out.println(c == (a + b));   //有运算，自动unboxing，为true
+        System.out.println(e == f);  //不缓存，新创建对象了，所以为false
+        System.out.println(c == (a + b));   //有运算，auto-unboxing，为true
         System.out.println(c.equals(a + b));//有运算，先auto-unboxing，再auto-boxing,为true
         System.out.println(g == (a + b));   //有运算，自动unboxing，为true
         System.out.println(g.equals(a + b)); //equals()方法没有自动类型转换，是两种不同的类型,为false
-        System.out.println(h == i);  //虽然是-128~127范围，但是这种新建方式没有使用缓存，和新建其他普通对象一样，为false
+        System.out.println(h == i);  //虽然是-128~127范围，但是这种new新建方式没有使用缓存，和新建其他普通对象一样，为false
     }
 }

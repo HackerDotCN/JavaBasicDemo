@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 /**
  * Author: zhang
- * Time: 8/21/2017
  * Description:
+ * Time: 8/21/2017
  */
 public class String2CharArray {
     public static void main(String[] args) {

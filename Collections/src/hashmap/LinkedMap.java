@@ -21,7 +21,7 @@ public class LinkedMap {
         maps.put("4", "赵六");
         System.out.println("LinkedHashMap(有序):");
         Iterator it = maps.entrySet().iterator();
-        while (it.hasNext()) {
+        _while (it.hasNext()) {
             Map.Entry entity = (Entry) it.next();
             System.out.println("[ key = " + entity.getKey() +
                     ", value = " + entity.getValue() + " ]");
@@ -35,7 +35,7 @@ public class LinkedMap {
         it = null;
         System.out.println("HashMap(无序):");
         it = map.entrySet().iterator();
-        while (it.hasNext()) {
+        _while (it.hasNext()) {
             Map.Entry entity = (Entry) it.next();
             System.out.println("[ key = " + entity.getKey() +
                     ", value = " + entity.getValue() + " ]");

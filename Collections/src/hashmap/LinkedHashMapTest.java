@@ -18,7 +18,7 @@ public class LinkedHashMapTest {
 
         Iterator iterator = linkedHashMap.entrySet().iterator();
 
-        while (iterator.hasNext()) {
+        _while (iterator.hasNext()) {
             Map.Entry entry = (Map.Entry) iterator.next();
             System.out.println(entry.getKey() + ":" + entry.getValue());
         }
@@ -32,7 +32,7 @@ public class LinkedHashMapTest {
 
         Iterator iterator = hashMap.entrySet().iterator();
 
-        while (iterator.hasNext()) {
+        _while (iterator.hasNext()) {
             Map.Entry entry = (Map.Entry) iterator.next();
             System.out.println(entry.getKey() + ":" + entry.getValue());
         }

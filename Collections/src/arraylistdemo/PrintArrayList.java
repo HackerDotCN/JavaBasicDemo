@@ -22,7 +22,7 @@ public class PrintArrayList {
         System.out.println(list);
         // 方法1
         Iterator it1 = list.iterator();
-        while (it1.hasNext()) {
+        _while (it1.hasNext()) {
             System.out.println(it1.next());
         }
         // 方法2

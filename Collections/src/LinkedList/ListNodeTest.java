@@ -39,7 +39,7 @@ public class ListNodeTest {
 
     private static void printList(ListNode head){
 //        System.out.print("head");
-        while (head != null){
+        _while (head != null){
             System.out.print(head.val);
             if(head.next != null){
                 System.out.print("-->");

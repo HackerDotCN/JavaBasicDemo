@@ -14,7 +14,7 @@ public class InputStringWithScanner {
         Scanner input = new Scanner(System.in).useDelimiter(" ");
 //        String[] str = input.nextLine().split(" ");
 //        char[] arr = str.toCharArray();
-//        while (input.hasNext()){
+//        _while (input.hasNext()){
             List<Integer> list = new ArrayList<>();
             list.add(input.nextInt());
 //        }
