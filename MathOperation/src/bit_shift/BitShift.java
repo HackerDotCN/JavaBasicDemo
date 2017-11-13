@@ -1,3 +1,5 @@
+package bit_shift;
+
 /**
  * @author: zhangyongbin
  * @Time: 2017/9/6  0006.
@@ -22,6 +24,13 @@ public class BitShift {
         System.out.println(Integer.MAX_VALUE+1);
         System.out.println(Integer.toBinaryString(Integer.MAX_VALUE+1));
         System.out.println(Integer.toBinaryString(0));
+
+        int left = 2;
+        int right = 2;
+        //注意这里移位时要加括号保证运算的优先级
+        int mid = left + ((right - left) >> 1);
+        System.out.println("mid值："+mid);
+        printInfo(0>>1);
     }
 
     /**
