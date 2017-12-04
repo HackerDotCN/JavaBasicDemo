@@ -26,5 +26,6 @@ public class EnumTest {
         }
         // 使用枚举实例时，可通过EnumClass.variable形式来访问
         new EnumTest().judge(SeasonEnum.SPRING);
+        System.out.println();
     }
 }
